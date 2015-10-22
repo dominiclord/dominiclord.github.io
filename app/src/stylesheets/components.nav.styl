@@ -1,0 +1,64 @@
+
+// Main navigation
+// ======================================================
+.c-nav
+    vertical-center()
+    position absolute
+    top 0
+    right 0
+    height 100%
+
+.c-nav_item
+    display inline-block
+
+    @media (min-width: fromMedium)
+        margin-left 30px
+
+    &.-resume
+        @media (max-width: toMedium)
+            display none
+
+        @media (min-width: fromMedium)
+            display inline
+
+    &.-contact
+        @media (max-width: toMedium)
+            bottom 0
+            margin-right 5%
+            position fixed
+            right 0
+            z-index 100
+
+.c-nav_link
+    color baseFontColor
+    font-size 3rem
+    font-style italic
+    font-weight 600
+    text-decoration none
+
+    &:link
+    &:visited
+        color inherit
+
+    &:hover
+        text-decoration underline
+
+    .c-nav_item.-contact &
+        @media (max-width: toMedium)
+            background-color #fff
+            border 1px solid #cdcdcd
+            border-bottom none
+            box-shadow 0 2px 10px -3px #000000
+            color #222
+            display block
+            font-size 20px
+            font-size 2rem
+            font-style italic
+            font-weight 700
+            padding 0.4em
+            text-decoration none
+
+            &:hover
+                background-color #aaa
+                border 1px solid #898989
+                border-bottom none

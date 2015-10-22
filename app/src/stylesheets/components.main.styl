@@ -1,0 +1,53 @@
+
+// Main content
+// ======================================================
+.c-main
+    padding-top 30px
+
+.c-main_section
+    clearfix()
+    margin-bottom 50px
+
+.c-main_heading
+.c-main_content
+.c-main_social
+    width 100%
+
+    @media (min-width: fromMedium)
+        float left
+
+.c-main_heading
+    border-bottom 1px solid primaryColor
+    margin-top 0
+    text-align left
+
+    @media (min-width: fromMedium)
+        text-align right
+        width 30%
+
+.c-main_content
+.c-main_social
+    @media (min-width: fromMedium)
+        padding-left 50px
+        width 70%
+
+.c-main_content
+    ul
+        list-style-type inherit
+        margin 10px 0 30px
+        padding 0 0 0 30px
+
+    li
+        margin-bottom 10px
+
+    a
+        background-color rgba(primaryColor, 0.6)
+        color baseFontColor
+        padding 0 6px
+        text-decoration none
+
+        &:hover
+            background-color primaryColor
+
+.c-main_subheading
+    margin-top 8px

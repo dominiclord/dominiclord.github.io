@@ -1,0 +1,101 @@
+
+// Contact section
+// @todo refactor
+// ======================================================
+.c-contact
+    section
+        margin-bottom 3em
+
+        @media (min-width: fromMedium)
+            float left
+            margin-bottom 0
+            width 50%
+
+    @media (min-width: fromMedium)
+        hr
+            display none
+
+    label
+    input
+    textarea
+        display block
+
+    input
+    textarea
+        font-family sans-serif
+        transition box-shadow 300ms ease-in-out
+
+    label
+        font-size 3rem
+        font-style italic
+        font-weight 700
+        width 100%
+
+    input[type="text"]
+    input[type="email"]
+    textarea
+        box-shadow 0px 0px 10px rgba(50,50,50,0.5)
+        border 1px solid #ddd
+        font-size 2.5rem
+        margin 0.5rem 0 2rem
+        outline none
+        padding 3px
+        width 100%
+
+        &:focus
+            box-shadow 0px 0px 16px rgba(50,50,50,0.80)
+
+    input.valid
+    textarea.valid
+        background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASdJREFUeNpiibkQzEAJYMIhngnEB4D4PxI+ABXHa4AiVOE0ILZHk7OHih+AqgMDFiQFckB8Hoj5CbjaHqpOD4gfIbtgPhGaYYAfqh7uhVggdiIx/EDqY2EGJBBS3SFXxNAqm4sunAAzwBif5na5AgYJbisGZkZ2dCljkAHM6H5frL+GYbb6QjC7VTabQZrPhuH518MMFY96MMICZMBfIH6NLBp7MQQo+J1hoc4aBhl+R4YnHw8xVD6aiM1xr2FeuIkuk3Ezg+Hnnw8Mzz4eZah6PAmX727C0sFcILZBl027kUIobOfCXLAYiC+QGI0g9YthBoDCIRQ9LPCA11D1f5FT4h0gtiLCJReg6u5gy0wgQUMgjgbiTUD8FCr+FMqPhsrfgWkACDAAdeFJlrFXYEcAAAAASUVORK5CYII=') no-repeat 98% center #fff
+        border-color #28921f
+
+    input.invalid
+    textarea.invalid
+        background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUpJREFUeNpivBIUxEAJYMIhngnEB4D4PxLeBcQJhAxQhGqcBsT2aHKuQDwfiLcDsTQ2A3SB+CqyRmY+PgYmDg4wjQQ8gPgSEKsgG8AGxOuAmBNZJYugIAOPlRUDm7g4usuFgHg1yA6YAckwE5EBt64ug2x2NgOPtTW2cDIA4kCYAVF4g5qREZdMAhOS/zHA70+fGP7+B0bA16+4DNCFGcCPTfbv+/cMf37+ZPj98SMuA/hhBrzGJvsHaMCHrVsZfj16hMuA1zADLmNNZcAo/PvlC8N/3GFwGWbAAmyyXJqaDJLx8Qx85ua4DJgLM2AZEJ/FCMQXLxi+XL7M8OvhQ2yaDwLxVkakzARKxseAWAIl+kCxAKMRABQoJshhAAL3gRjk1uNwEZgmVM37oOrAAc+C5iyQyVZA7A3NeYrQNAIK5JvQsNqNrAEgwAAO6VaUCoOyHgAAAABJRU5ErkJggg==') no-repeat 98% center #fff
+        border-color #b03535
+
+    input:required:valid
+    textarea:required:valid
+    input.valid
+    textarea.valid
+        background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAASdJREFUeNpiibkQzEAJYMIhngnEB4D4PxI+ABXHa4AiVOE0ILZHk7OHih+AqgMDFiQFckB8Hoj5CbjaHqpOD4gfIbtgPhGaYYAfqh7uhVggdiIx/EDqY2EGJBBS3SFXxNAqm4sunAAzwBif5na5AgYJbisGZkZ2dCljkAHM6H5frL+GYbb6QjC7VTabQZrPhuH518MMFY96MMICZMBfIH6NLBp7MQQo+J1hoc4aBhl+R4YnHw8xVD6aiM1xr2FeuIkuk3Ezg+Hnnw8Mzz4eZah6PAmX727C0sFcILZBl027kUIobOfCXLAYiC+QGI0g9YthBoDCIRQ9LPCA11D1f5FT4h0gtiLCJReg6u5gy0wgQUMgjgbiTUD8FCr+FMqPhsrfgWkACDAAdeFJlrFXYEcAAAAASUVORK5CYII=') no-repeat 98% center #fff
+        border-color #28921f
+        box-shadow 0 0 16px rgba(92,208,83,0.8)
+
+    input:focus:invalid
+    textarea:focus:invalid
+    input.invalid
+    textarea.invalid
+        background url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUpJREFUeNpivBIUxEAJYMIhngnEB4D4PxLeBcQJhAxQhGqcBsT2aHKuQDwfiLcDsTQ2A3SB+CqyRmY+PgYmDg4wjQQ8gPgSEKsgG8AGxOuAmBNZJYugIAOPlRUDm7g4usuFgHg1yA6YAckwE5EBt64ug2x2NgOPtTW2cDIA4kCYAVF4g5qREZdMAhOS/zHA70+fGP7+B0bA16+4DNCFGcCPTfbv+/cMf37+ZPj98SMuA/hhBrzGJvsHaMCHrVsZfj16hMuA1zADLmNNZcAo/PvlC8N/3GFwGWbAAmyyXJqaDJLx8Qx85ua4DJgLM2AZEJ/FCMQXLxi+XL7M8OvhQ2yaDwLxVkakzARKxseAWAIl+kCxAKMRABQoJshhAAL3gRjk1uNwEZgmVM37oOrAAc+C5iyQyVZA7A3NeYrQNAIK5JvQsNqNrAEgwAAO6VaUCoOyHgAAAABJRU5ErkJggg==') no-repeat 98% center #fff
+        border-color #b03535
+        box-shadow 0 0 16px rgba(212,82,82,0.80)
+
+    button[type="submit"]
+        background-color rgba(30,196,166,0.60)
+        border 1px solid #777
+        font-size 2.5rem
+        font-style italic
+        font-weight 700
+        margin 0.5rem 0 2rem
+        outline none
+        padding 3px
+        width 7em
+
+        &:hover
+            background-color rgba(30,196,166,1)
+
+    textarea
+        height 9em
+        resize none
+
+.overlay
+    background url('/images/loader.gif') no-repeat 50% 50% #000
+    display none
+    height 100%
+    left 0
+    opacity 0.5
+    position fixed
+    top 0
+    width 100%
+    z-index 10
