@@ -9,7 +9,7 @@ app.set('views', __dirname + '/app/views');
 
 app.use(express.static(__dirname + '/app/dist'));
 
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 24548;
 
 app.get('/', function(req, res) {
     res.render('index', {
