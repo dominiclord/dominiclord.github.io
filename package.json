@@ -28,7 +28,7 @@
     "require-dir": "^0.3.0"
   },
   "dependencies": {
-    "express": "^4.13.3",
+    "express": "^4.17.3",
     "mustache-express": "^1.2.1"
   }
 }
